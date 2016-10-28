@@ -7,10 +7,10 @@ session_start();//inicio de secion
 
 /*************************** Instagram api *******************************/
 
-difine('clientID', '0340e213b8d04f96ba4fdc4c0e9149a2');
-difine('clientSecret', 'e9dcc62425304138b604f450098147b4');
-//difine('redirectURL', 'https://ide.c9.io/rudex1/api_instagram/');
-difine('imageDirectory', 'pics/'); //donde se guarda todas las fotos
+define('clientID', '0340e213b8d04f96ba4fdc4c0e9149a2');
+define('clientSecret', 'e9dcc62425304138b604f450098147b4');
+define('redirectURL', 'https://localhost:3000/rudex1/api_instagram/index.php');
+define('imageDirectory', 'pics/'); //donde se guarda todas las fotos
 
 /*********************** CONECTANDO CON INSTAGRAM ****************************/
 function connectToInstagram($url){
