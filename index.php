@@ -93,7 +93,8 @@ if ($_GET['code']) {
 
 <!DOCTYPE html>
 <html>
-	<style type="css/myStyle.css"></style>
+
+	<link rel="stylesheet" href="css/myStyle.css">
 	<head>
 	
 	</head>

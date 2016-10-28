@@ -1,5 +1,5 @@
 a:link, a:visited {
-    background-color: #f44336;
+    background-color: #3B6A90;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -9,4 +9,7 @@ a:link, a:visited {
 
 a:hover, a:active {
     background-color: #0285D7;
+}
+a:center{
+     alignment-baseline: central
 }
