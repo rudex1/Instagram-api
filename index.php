@@ -10,7 +10,7 @@ session_start();//inicio de secion
 define('clientID', '0340e213b8d04f96ba4fdc4c0e9149a2');
 define('clientSecret', 'e9dcc62425304138b604f450098147b4');
 define('redirectURL', 'https://localhost:3000/rudex1/api_instagram/index.php');
-define('imageDirectory', 'pics/'); //donde se guarda todas las fotos
+define('imageDirectory', 'api_instagram/pics/'); //donde se guarda todas las fotos
 
 /*********************** CONECTANDO CON INSTAGRAM ****************************/
 function connectToInstagram($url){
@@ -93,14 +93,39 @@ if ($_GET['code']) {
 
 <!DOCTYPE html>
 <html>
+	<title> Instagram Download Img </title>
 
-	<link rel="stylesheet" href="css/myStyle.css">
-	<head>
 	
+	<head>
+		<link rel="stylesheet" href="css/myStyle.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous">
+		</script>
 	</head>
 	<body>
-		<a href="https://api.instagram.com/oauth/authorise/?client_id=<?php echo clientID;?>&redirect_url=<?php echo redirectURL; ?>&response_type=code"> Entra a instagram para descargar tus fotos</a>
-
+<!--Inicio de navbar--->
+<!-- Just an image -->
+	<nav class="navbar navbar-light bg-faded">
+  		<a class="navbar-brand" href="index.html">Inicio
+  		<a class="nav-link" href="#">Instagram Download</a></a>
+		</nav>
+<!--Fin de navbar--->
+	<center>
+			<br/>
+				
+			<div id="">
+				<a href="https://api.instagram.com/oauth/authorise/?client_id=<?php echo clientID;?>&redirect_url=<?php echo redirectURL; ?>&response_type=code"><img src="Img/instagram.png" width="40px" height="40px" class="rounded-bottom" alt="Responsive image"></img>&nbsp; descargar tus fotos</a>
+			</div>
+			<footer>
+				<label for=""></label>
+			</footer>
+			
+		</center>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+		
 	</body>
 </html>
 

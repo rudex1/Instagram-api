@@ -1,5 +1,5 @@
 a:link, a:visited {
-    background-color: #3B6A90;
+    background-color: #1691CF;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -10,6 +10,123 @@ a:link, a:visited {
 a:hover, a:active {
     background-color: #0285D7;
 }
-a:center{
-     alignment-baseline: central
+ {
+position: relative;
+    box-sizing: border-box;
 }
+ 
+body {
+    color: $grey;
+    font-size: $font-size;
+}
+ 
+ 
+header {
+    max-height: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+/*img {
+position: fixed;
+    top: 0px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+ 
+    @media screen and (min-width: $screen-lg) {
+        top: auto;
+        left: auto;
+        margin: 0;
+        width: 100%;
+    }
+}*/
+.name {
+    font-size: 21px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        color: $white;
+    }
+ 
+    .titles {
+        position: absolute;
+        bottom: 40%;
+        width: 100%;
+        text-align: center;
+ 
+        @media screen and (min-width: $screen-lg) {
+            bottom: 50%;
+        }
+    }
+ 
+    h1, h2 {
+        width: 100%;
+        color: $white;
+        margin: 0;
+    }
+    h1 {
+    text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.06em;
+        margin-bottom: $margin;
+ 
+        span {
+            display: block;
+ 
+            @media screen and (min-width: $screen-md) {
+                display: inline;
+            }
+        }
+     }
+ 
+     h2 {
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto;
+ 
+        @media screen and (min-width: $screen-lg) {
+            width: 100%;
+            margin: 0;
+        }
+     }
+     .fancy-font {
+font-family: $fancy-font;
+}
+.social {
+    position: absolute;
+        top: 55px;
+        right: 50px;
+        overflow: hidden;
+ 
+        a {
+            float: left;
+            width: 26px;
+            height: 26px;
+            margin: 0 5px;
+            text-indent: -9999px;
+            background: url(../images/social-sprite.png) no-repeat;
+            opacity: 0.8;
+ 
+            &:hover {
+                opacity: 1.0;
+            }
+ 
+            @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
+                background: url(../images/social-sprite@2x.png) no-repeat;
+                background-size: 76px 26px;
+            }
+ 
+            &.facebook {
+                background-position: 0px 0px;
+            }
+ 
+            &.twitter {
+                background-position: -25px 0px;
+            }
+ 
+            &.instagram {
+                background-position: -50px 0px;
+            }
+        }
+     }
